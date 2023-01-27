@@ -10,3 +10,4 @@ psycopg2==2.9.3
 SQLAlchemy==1.4.25
 plotly==5.13.0
 plotnine==0.10.1
+missingno==0.5.19
