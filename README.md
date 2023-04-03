@@ -1,40 +1,34 @@
-# ds-project-template
+# EDA-Project: King County Housing Data
 
-Template for creating ds simple projects
+As Part of the Data-Science Bootcamp of Neuefische, the first self-steered project after 2 1/2 weeks was an EDA-Project on King-County-Housing Data (hhttps://github.com/neuefische/ds-eda-project-template).
 
-## Requirements
+# The data
 
-- pyenv
-- python==3.9.8
+- You will use the King County Housing Data: This dataset contains information about home sales in King County (USA).
+- The dataset will be provide, please copy it in the data folder where it will not be uploaded to github.
+- The description of the column names can be found in the `column_names.md` file.
 
-## Setup
+# The Tasks
 
-One of the first steps when starting any data science project is to create a virtual environment. For this project you have to create this environment from scratch yourself. However, you should be already familiar with the commands you will need to do so. The general workflow consists of... 
+1. Create a new repo (hhttps://github.com/neuefische/ds-eda-project-template).
 
-* setting the python version locally to 3.9.8
-* creating a virtual environment using the `venv` module
-* activating your newly created environment 
-* upgrading `pip` (This step is not absolutely necessary, but will save you trouble when installing some packages.)
-* installing the required packages via `pip`
+2. Through EDA/statistical analysis above please come up with **AT LEAST 3 insights** regarding the overall data. One should be geographical.
 
-At the end, you want to make sure that people who are interested in your project can create an identical environment on their own computer in order to be able to run your code without running into errors. Therefore you can create a `requirements file` and add it to your repository. You can create such a file by running the following command: 
+3. In addition also come up with **AT LEAST 3 recommendations** for your client.
 
-```bash
-pip freeze > requirements.txt
-```
+## Client
+Erin Robinson: Buyer	
+- Invest in poor neighborhood
+- buying & selling 
+- costs back + little profit
+- socially responsible
 
-*Note: In rare case such a requirements file created with `pip freeze` might not ensure that another (especially M1 chip) user can install and execute it properly. This can happen if libraries need to be compiled (e.g. SciPy). Then it also depends on environment variables and the actual system libraries.*
+Erin wants to buy property in poor neighbourhoods to create, renovate and maintain affordable living space for rent and selling. Since she is responsible, renovating outdated property is possible. With Erins private resources, houses shall be bought, possibly renovated and the new property shall be transfered into a community oriented fund.
 
-### Unit testing (Optional)
-
-If you write python scripts for your data processing methods, you can also write unit tests. In order to run the tests execute in terminal:
-
-```bash
-pytest
-```
-
-This command will execute all the functions in your project that start with the word **test**.
-
+## Questions:
+1. What parameters describe a poor neighbourhood based on the house data?
+2. Where are those poor neighbourhoods located
+3. In which of those neighbourhoods is the renovated fraction especially small and houses are reletively old and condition or grade is rather bad -> These are the neighborhoods in most need of development 
 
 ### Environment
 
@@ -44,6 +38,10 @@ This repo contains a requirements.txt file with a list of all the packages and d
 brew update
 brew install postgresql
 ```
+## Requirements
+
+- pyenv
+- python==3.9.8
 
 In order to install the environment you can use the following commands:
 
